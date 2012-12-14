@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>请输入要生成QR的内容</title>
+</head>
+<body>
+<form action="genreq" method="post">
+<span>请输入要生成QR的内容</span><br />
+<textarea name="contents" cols="60" rows="15" ></textarea><br />
+宽(1-1000):<input type="text" name="width" />&nbsp;&nbsp;&nbsp;&nbsp;高(1-1000):<input type="text" name="height" /><br />
+<input type="checkbox" name="dirPic" checked="checked" value="true"/><label for="dirPic">直接生成图片</label><br/>
+生成QR类型:<select name="barcodeFormat">
+<option value="1">QR</option>
+<option value="13">PDF-417</option>
+<!-- <option value="2">RSS-14</option>
+<option value="3">AZTEC</option>
+<option value="4">CODABAR</option>
+<option value="5">CODE-128</option>
+<option value="6">CODE-39</option>
+<option value="7">CODE-93</option>
+<option value="8">DATA-MATRIX</option>
+<option value="9">EAN-13</option>
+<option value="10">EAN-8</option>
+<option value="11">ITF</option>
+<option value="12">MAXICODE</option>
+<option value="14">RSS-EXPANDED</option>
+<option value="15">UPC-A</option>
+<option value="16">UPC-E</option>
+<option value="17">UPC-EAN-EXTENSION</option> -->
+</select><br/>
+<input type="submit" value="确定"/>
+</form>
+</body>
+</html>
